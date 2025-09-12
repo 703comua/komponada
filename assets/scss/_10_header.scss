@@ -82,6 +82,7 @@
             padding: unset;
             background-color: unset;
 			z-index: unset;
+			overflow-y: unset;
             &__list {
                 @include flex();
                 flex-direction: row;
