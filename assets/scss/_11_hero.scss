@@ -1,0 +1,35 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    &__container {
+        height: 611px;
+        background: url("../img/hero/hero-bg-mob.png") no-repeat center 32px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 778px;
+        height: 762px;
+        background-color: var(--bg-secondary);
+        border-radius: 50%; /* превращает прямоугольник в эллипс */
+        top: -153px; /* выставь, куда нужно */
+        z-index: -1; /* отправляем эллипс за контент */
+        left: 50%;
+        transform: translateX(-50%); /* только горизонтальное центрирование */
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero {
+        &__container {
+            height: 782px;
+            background: url("../img/hero/hero-bg.png") no-repeat center 0px;
+        }
+        &:before {
+            width: 2139px;
+            height: 2096px;
+            top: -1314px; /* выставь, куда нужно */
+        }
+    }
+}

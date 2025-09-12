@@ -1,0 +1,102 @@
+@mixin flex() {
+	display: flex;
+	align-items: center;
+}
+
+@mixin marginsTop() { 
+	@for $i from 0 through 100 {
+		.mt#{$i} {
+			margin-top: #{$i}px;
+		}
+	}
+}
+@include marginsTop();
+
+@mixin marginsBottom() {
+	@for $i from 0 through 100 {
+		.mb#{$i} {
+			margin-bottom: #{$i}px;
+		}
+	}
+} 
+@include marginsBottom();
+
+@mixin marginsLeft() { 
+	@for $i from 0 through 100 {
+		.ml#{$i} {
+			margin-left: #{$i}px;
+		}
+	}
+}
+@include marginsLeft();
+
+@mixin marginsRight() { 
+	@for $i from 0 through 100 {
+		.mr#{$i} {
+			margin-right: #{$i}px;
+		}
+	}
+}
+@include marginsRight();
+
+@mixin paddingsTop() {
+	@for $i from 0 through 100 {
+		.pt#{$i} {
+			padding-top: #{$i}px;
+		}
+	}
+}
+@include paddingsTop();
+
+@mixin paddingsBottom() {
+	@for $i from 0 through 100 {
+		.pb#{$i} {
+			padding-bottom: #{$i}px;
+		}
+	}
+}
+@include paddingsBottom();
+
+@mixin paddingsLeft() { 
+	@for $i from 0 through 100 {
+		.pl#{$i} {
+			padding-left: #{$i}px;
+		}
+	}
+}
+@include paddingsLeft();
+
+@mixin paddingsRight() { 
+	@for $i from 0 through 100 {
+		.pr#{$i} {
+			padding-right: #{$i}px;
+		}
+	}
+}
+@include paddingsRight();
+
+
+
+@import '_0_reset';
+@import '_1_fonts';
+@import '_2_basic'; 
+// @import '_3_video';
+// @import '_4_swiper';
+// @import '_5_tooltip';
+// @import '_6_breadcrumbs';
+// @import '_7_jquery_ui';  
+// @import '_8_modals'; 
+
+@import '_10_header'; 
+@import '_11_hero'; 
+// @import '_12_events'; 
+// @import '_13_event'; 
+// @import '_14_videoanonsy'; 
+// @import '_15_text_content'; 
+// @import '_16_blog'; 
+// @import '_17_footer'; 
+
+// @import '_21_page_template1'; 
+// @import '_22_gratters';
+// @import '_23_promotions';
+// @import '_24_telegram';

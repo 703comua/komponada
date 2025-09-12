@@ -1,0 +1,125 @@
+.header {
+    background-color: var(--bg-secondary);
+
+    &__container {
+        @include flex();
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        &__link {
+            font-weight: 800;
+            font-size: 24px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+
+    .nav {
+        position: fixed;
+        top: 70px;
+        right: -100%; /* скрыто за экраном */
+        width: 100%;
+        height: calc(100% - 70px);
+        padding: 130px 40px;
+        background-color: var(--bg-secondary);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        overflow-y: scroll;
+        &.nav--open {
+            right: 0;
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__link {
+            display: block;
+            padding: 20px 0;
+            color: #fff;
+            font-family: var(--font-family-heading);
+            font-weight: 500;
+            font-size: 24px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .burger {
+        @include flex;
+        justify-content: center;
+        background: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        &__container {
+            padding-top: 22px;
+            padding-bottom: 22px;
+        }
+
+        .logo {
+            &__link {
+                font-size: 40px;
+            }
+        }
+
+        .nav {
+            position: unset;
+            top: unset;
+            right: unset;
+            width: unset;
+            height: unset;
+            padding: unset;
+            background-color: unset;
+			z-index: unset;
+            &__list {
+                @include flex();
+                flex-direction: row;
+                gap: 24px;
+            }
+            &__link {
+                display: block;
+                padding: 16px 0;
+                color: #fff;
+                font-weight: 700;
+                font-size: 13px;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 1px; /* кружок на 8px выше текста */
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 8px;
+                    height: 8px;
+					background-color: var(--bg-tertiary);
+                    border-radius: 50%;
+                    opacity: 0;
+                    transition: opacity 0.3s ease, transform 0.3s ease;
+                }
+
+                &:hover{
+					&:before {
+						opacity: 1;
+						transform: translateX(-50%) translateY(-2px); /* лёгкий сдвиг для анимации */
+					}
+                }
+            }
+        }
+
+        .burger {
+            display: none;
+        }
+    }
+}
