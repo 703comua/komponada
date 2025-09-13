@@ -14,12 +14,12 @@ body {
     background-color: var(--bg-primary);
     font-size: 14px;
     color: var(--text-primary);
-    min-width: 360px;
+    min-width: 375px;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 375px;
     padding: 0 20px;
 }
 
@@ -45,6 +45,20 @@ body {
 
 .clear {
     clear: both;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+@media screen and (min-width: 1280px) {
+    .section-title {
+        font-size: 56px;
+    }
 }
 
 /* ------------------------------------------------------------------------- */

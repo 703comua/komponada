@@ -1,0 +1,93 @@
+.coto {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: 72px;
+        height: 133px;
+        position: absolute;
+        right: 0;
+        top: -29px;
+        z-index: 1;
+        background: url("../img/coto/lemon-mob.png") no-repeat top right;
+    }
+    &__container {
+        padding-top: 52px;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-bottom: 64px;
+        &::before {
+            display: none;
+        }
+    }
+    &__title {
+        margin-bottom: 14px;
+    }
+    &__content {
+        padding: 92px 36px 31px;
+        letter-spacing: 0.02em;
+        font-size: 18px;
+        line-height: 1.7;
+        background: url("../img/coto/bg-mob.png") no-repeat top left;
+    }
+    &__text {
+        &:not(:last-child) {
+            padding-bottom: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .coto {
+        &:before {
+            display: none;
+        }
+        &__container {
+            padding-left: 80px;
+            padding-right: 80px;
+            position: relative;
+			background: url("../img/coto/lemon2.png") no-repeat right 5px top 158px;
+            &:before {
+				content: "";
+                display: block;
+                width: 197px;
+                height: 197px;
+                position: absolute;
+                left: 21px;
+                top: -43px;
+                z-index: 1;
+				background: url("../img/coto/apple.png") no-repeat; 
+            }
+            &:after {
+                display: none;
+                content: "";
+                display: block;
+                width: 176px;
+                height: 162px;
+                position: absolute;
+                right: 121px;
+                top: -43px;
+                z-index: 1;
+                background: url("../img/coto/lemon.png") no-repeat top right;
+            }
+        }
+        &__title {
+            margin-bottom: 48px;
+        }
+        &__content {
+            position: relative;
+            padding: 110px 92px 31px;
+            height: 498px;
+            width: 885px;
+            font-size: 20px;
+            line-height: 1.8;
+            background: url("../img/coto/bg.png") no-repeat top left;
+            margin: 0 auto;
+        }
+        &__text {
+            &:not(:last-child) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
