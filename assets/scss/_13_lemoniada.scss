@@ -1,0 +1,120 @@
+.lemoniada {
+    &__container {
+        position: relative;
+        padding-bottom: 64px;
+    }
+    &__title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+        font-family: var(--font-family-heading);
+        font-weight: 800;
+        font-size: 20px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 44px;
+        span {
+            display: inline-block;
+            &:first-child {
+                transform: rotate(15deg);
+            }
+            &:last-child {
+                transform: rotate(-15deg);
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 718px;
+        background: url("../img/lemoniada/bg-mob.png") no-repeat top center;
+    }
+    &__list {
+        &item {
+            position: relative;
+            padding-left: 29px;
+            font-size: 20px;
+            letter-spacing: 0.16em;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 12px;
+                height: 12px;
+                background-color: var(--bg-secondary);
+                border-radius: 50%;
+                transform: translateY(-50%); /* чтобы кружок был по центру текста */
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .lemoniada {
+        &__container {
+            padding-left: 58px;
+            padding-right: 58px;
+        }
+        &__title {
+            font-size: 30px;
+            display: block;
+            width: 100%;
+            span {
+                position: absolute;
+                &:first-child {
+                    right: 265px;
+                    top: 15px;
+                }
+                &:last-child {
+                    left: 285px;
+                    top: 25px;
+                }
+            }
+        }
+        &__content {
+            flex-direction: row-reverse;
+            gap: 460px;
+            justify-content: center;
+            padding-top: 583px;
+            padding-bottom: 120px;
+            background: url("../img/lemoniada/bg.png") no-repeat top center;
+        }
+        &__list {
+            width: 360px;
+            &:last-of-type {
+                .lemoniada__listitem {
+                    text-align: right;
+                    padding-right: 40px;
+                    padding-left: 0;
+                    &:before {
+                        right: 0;
+                        left: unset;
+                    }
+                }
+            }
+            &item {
+                padding-left: 40px;
+                font-size: 23px;
+                // line-height: 1.2;
+                &:not(:last-child) {
+                    margin-bottom: 45px;
+                }
+                &:before {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}

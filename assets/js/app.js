@@ -17,4 +17,6 @@ burger.addEventListener("click", () => {
 
     burger.setAttribute("aria-expanded", isOpen);
     burger.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+
+    document.body.classList.toggle("lock-scroll", isOpen);
 });

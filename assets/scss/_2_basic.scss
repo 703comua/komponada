@@ -3,6 +3,7 @@
     --bg-primary: #d9e47c;
     --bg-secondary: #f1a257;
     --bg-tertiary: #dae086;
+    --bg-quaternary: #CFD85E;
 
     --text-primary: #282828;
 
@@ -15,6 +16,11 @@ body {
     font-size: 14px;
     color: var(--text-primary);
     min-width: 375px;
+
+    &.lock-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
 }
 
 .container {
@@ -48,7 +54,6 @@ body {
 }
 
 .section-title {
-    font-weight: 700;
     font-size: 32px;
     letter-spacing: 0.02em;
     text-align: center;
@@ -70,6 +75,7 @@ h4,
 h5,
 h6 {
     font-family: var(--font-family-heading);
+    font-weight: 700;
 }
 
 h1 {
