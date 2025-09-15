@@ -1,0 +1,199 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 1214px;
+        height: 1190px;
+        background-color: var(--bg-secondary);
+        border-radius: 50%;
+        top: 0px;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__container {
+        padding-top: 52px;
+        color: #fff;
+    }
+    &__content {
+        margin-bottom: 24px;
+    }
+    &__title {
+        margin-bottom: 32px;
+        font-size: 36px;
+    }
+    &__text {
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-bottom: 40px;
+        font-family: var(--font-family-base);
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .feedbackform {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &__input,
+        &__textarea {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid var(--input-border);
+            background-color: var(--input-bg);
+            padding: 9px 11px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 1.45;
+            letter-spacing: 0.03em;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        &__textarea {
+            height: 80px;
+            resize: none;
+        }
+        &__input {
+            height: 47px;
+        }
+        &__btn {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--bg-secondary);
+            background-color: #fff;
+            border-radius: 200px;
+            height: 48px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            &:hover {
+                background-color: var(--bg-primary);
+                color: #fff;
+            }
+        }
+    }
+    &__contacts {
+        padding: 24px 0;
+        border: 1px solid rgb(255, 255, 255, 0.5);
+        border-left: none;
+        border-right: none;
+        @include flex();
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__phone {
+        @include flex;
+        gap: 10px;
+        font-family: var(--font-family-heading);
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        transition: color 0.3s ease;
+        &:hover {
+            color: var(--bg-primary);
+            .footer__phoneicon {
+                fill: var(--bg-primary);
+            }
+        }
+        &icon {
+            fill: #fff;
+            transition: fill 0.3s ease;
+        }
+    }
+    .socials {
+        @include flex();
+        justify-content: center;
+        gap: 20px;
+        &__item {
+        }
+        &__link {
+            &:hover {
+                .socials__icon {
+                    fill: var(--bg-primary);
+                }
+            }
+        }
+        &__icon {
+            fill: #fff;
+            transition: fill 0.3s ease;
+        }
+    }
+    &__copyright {
+        font-family: var(--font-family-heading);
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2px;
+        padding: 12px 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        &:before {
+            width: 2139px;
+            height: 2096px;
+        }
+        &__container {
+            padding-top: 56px;
+            position: relative;
+        }
+        &__content {
+            padding-bottom: 64px;
+            margin: 0 auto;
+            max-width: 621px;
+        }
+        &__title {
+        }
+        &__text {
+        }
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+        .feedbackform {
+            margin: 0 auto;
+            max-width: 560px;
+            gap: 16px;
+            &__input {
+                &:nth-child(2) {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+        &__contacts {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 26px 0;
+            border-bottom: none;
+        }
+        &__phone {
+            margin-left: 6px;
+        }
+        .socials {
+        }
+        &__copyright {
+            font-size: 18px;
+            position: absolute;
+            bottom: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

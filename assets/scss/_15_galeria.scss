@@ -1,9 +1,40 @@
 .galeria {
-    
+    &__container {
+        padding-top: 48px;
+        padding-bottom: 52px;
+    }
+    &__title {
+        margin-bottom: 36px;
+    }
+    &__list {
+        @include flex();
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__item {
+    }
+    &__photo {
+        border: 8px solid #fff;
+        max-width: 100%;
+        aspect-ratio: 319 / 320;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     .galeria {
-        
+        &__container {
+            padding-top: 90px;
+            padding-bottom: 120px;
+        }
+        &__title {
+            margin-bottom: 64px;
+        }
+        &__list {
+            flex-direction: row;
+            gap: 24px;
+        }
+        &__photo {
+            aspect-ratio: 287 / 287;
+        }
     }
 }

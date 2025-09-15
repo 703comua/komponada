@@ -12,11 +12,11 @@
         width: 778px;
         height: 762px;
         background-color: var(--bg-secondary);
-        border-radius: 50%; /* превращает прямоугольник в эллипс */
-        top: -153px; /* выставь, куда нужно */
-        z-index: -1; /* отправляем эллипс за контент */
+        border-radius: 50%;
+        top: -153px;
+        z-index: -1;
         left: 50%;
-        transform: translateX(-50%); /* только горизонтальное центрирование */
+        transform: translateX(-50%);
     }
 }
 
@@ -29,7 +29,7 @@
         &:before {
             width: 2139px;
             height: 2096px;
-            top: -1314px; /* выставь, куда нужно */
+            top: -1314px;
         }
     }
 }
