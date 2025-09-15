@@ -26,11 +26,11 @@
     &__content {
         padding: 92px 36px 55px;
         letter-spacing: 0.02em;
-        font-size: 18px;
         line-height: 1.7;
         background: url("../img/coto/bg-mob.png") no-repeat top left;
     }
     &__text {
+        font-size: 18px;
         &:not(:last-child) {
             padding-bottom: 16px;
         }
@@ -80,12 +80,12 @@
             padding: 110px 92px 31px;
             height: 498px;
             width: 885px;
-            font-size: 20px;
             line-height: 1.8;
             background: url("../img/coto/bg.png") no-repeat top left;
             margin: 0 auto;
         }
         &__text {
+            font-size: 20px;
             &:not(:last-child) {
                 padding-bottom: 20px;
             }
