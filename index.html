@@ -252,14 +252,16 @@
                         Chcesz jej spróbować?
                     </p>
                     <h3 class="footer__subtitle">Skontaktuj się z nami a wszystko ustalimy!</h3>
-                    <form class="footer__form feedbackform" action="/" method="post">
-                        <input class="feedbackform__input" type="email" placeholder="e-mail" name="email" />
-                        <textarea class="feedbackform__textarea" placeholder="wiadomość" name="" id=""></textarea>
+                    <form class="footer__form feedbackform" action="" method="post">
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input class="feedbackform__input" type="email" placeholder="e-mail" name="email" id="email" autocomplete="email" required/>
+                        <label for="message" class="visually-hidden">Wiadomość</label>
+                        <textarea class="feedbackform__textarea" placeholder="wiadomość" name="message" id="message" autocomplete="off" required></textarea>
                         <button class="feedbackform__btn" type="submit">WYŚLIJ</button>
                     </form>
                 </div>
 
-                <div class="footer__contacts">
+                <address class="footer__contacts">
                     <a class="footer__phone" href="tel:48572898899">
                         <svg class="footer__phoneicon" width="14" height="22">
                             <use xlink:href="./assets/svg/sprite.svg#phone"></use>
@@ -268,21 +270,21 @@
                     </a>
                     <ul class="footer__socials socials">
                         <li class="socials__item">
-                            <a class="socials__link" href="#" target="_blank">
+                            <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
                                 <svg class="socials__icon" width="32" height="32">
                                     <use xlink:href="./assets/svg/sprite.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a class="socials__link" href="#" target="_blank">
+                            <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
                                 <svg class="socials__icon" width="32" height="32">
                                     <use xlink:href="./assets/svg/sprite.svg#facebook"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
-                </div>
+                </address>
 
                 <p class="footer__copyright">
                     <svg class="footer__copyright-icon" width="12" height="13">
