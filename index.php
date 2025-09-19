@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komponada</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/app.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container header__container">
+            <h1 class="logo">
+                <a class="logo__link" href="/" aria-label="Homepage">komponada</a>
+            </h1>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#cotokomponada" class="nav__link">co to komponada</a></li>
+                    <li class="nav__item"><a href="#historia" class="nav__link">historia</a></li>
+                    <li class="nav__item"><a href="#galeria" class="nav__link">galeria</a></li>
+                    <li class="nav__item"><a href="#kontakt" class="nav__link">kontakt</a></li>
+                </ul>
+            </nav>
+
+            <button type="button" class="burger" aria-label="Open menu" aria-expanded="false">
+                <svg class="icon-burger" width="24" height="18">
+                    <use xlink:href="./assets/svg/sprite.svg#burger"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero__container container">
+                <h2 class="visually-hidden">Komponada</h2>
+            </div>
+        </section>
+
+        <!-- coto -->
+        <section class="coto" id="cotokomponada">
+            <div class="coto__container container">
+                <h2 class="coto__title section-title">co to komponada</h2>
+                <div class="coto__content">
+                    <p class="coto__text">
+                        Komponada to fuzja owocowej głębi i orzeźwiającej lekkości – wyjątkowe połączenie smaku, które powstało na bazie
+                        przekazywanej od wielu pokoleń receptury kompotu.
+                    </p>
+                    <p class="coto__text">
+                        W procesie tworzenia Komponady nic nie jest przypadkowe – stosujemy tę samą metodę, którą stosowały nasze Babcie, z
+                        dbałością o każdy szczegół. Starannie dobrane składniki gotujemy razem, zachowując ich pełnię smaku. Kluczowym elementem
+                        naszej filozofii jest całkowita rezygnacja ze sztucznych dodatków.
+                    </p>
+                    <p class="coto__text">Dzięki temu Komponada to napój w 100% naturalny, autentyczny i pełen harmonii.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- lemoniada -->
+        <section class="lemoniada">
+            <div class="lemoniada__container container">
+                <h2 class="lemoniada__title">
+                    <span>lemoniada</span>
+                    <span>kompot</span>
+                </h2>
+                <div class="lemoniada__content">
+                    <ul class="lemoniada__list">
+                        <li class="lemoniada__item">Bez konserwantów</li>
+                        <li class="lemoniada__item">Produkt bezglutenowy</li>
+                        <li class="lemoniada__item">Dla wegan</li>
+                        <li class="lemoniada__item">Powstaje w tradycyjnej<br />tłoczni zdrowych soków NFC</li>
+                        <li class="lemoniada__item">Tradycyjnie przygotowywany<br />i gotowany</li>
+                        <li class="lemoniada__item">Świeże jabłka są sortowane,<br />myte i rozdrabniane</li>
+                    </ul>
+                    <ul class="lemoniada__list">
+                        <li class="lemoniada__item">100 procent naturalny</li>
+                        <li class="lemoniada__item">Z naturalnych składników</li>
+                        <li class="lemoniada__item">Świeże polskie jabłka</li>
+                        <li class="lemoniada__item">Tradycyjny smak</li>
+                        <li class="lemoniada__item">Używana zdrowa Stewia</li>
+                        <li class="lemoniada__item">Mała ilość kalorii i cukru<br />(tylko 3,8%)</li>
+                        <li class="lemoniada__item">Bez sztucznych dodatków</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- historia -->
+        <section class="historia" id="historia">
+            <div class="historia__container container">
+                <h2 class="historia__title section-title">Pomysł i historia</h2>
+                <ul class="historia__list">
+                    <li class="historia__item">
+                        <h3 class="historia__subtitle">SKĄD TEN POMYSŁ</h3>
+                        <h4 class="historia__subheading">Jak powstata Komponada?</h4>
+                        <p class="historia__text">
+                            Tak, wizyta u babci w tym pomogła.<br />
+                            Co zauważyliśmy? Nie można go kupić w sklepie lub restauracji i wypić w wygodny sposób np. na spacerze. Babcie
+                            potrafią wszystko, jednak nie ma ich wszędzie i nie gotują kompotu w 5 minut. Zaczęliśmy myśleć jak to zrealizować,
+                            aby kompot był bardziej dostępny. To był krok w stronę przywrócenia czegoś co jest i każdy to zna, jest w Polskiej
+                            kulturze od dawna, ale nie jest dostępny dla każdego.
+                        </p>
+                    </li>
+                    <li class="historia__item">
+                        <h3 class="historia__subtitle">HISTORIA POWSTANIA KOMPOTU</h3>
+                        <h4 class="historia__subheading">Historia powstania kompotu sięga aż XV wieku.</h4>
+                        <p class="historia__text">
+                            Podczas drugiej wojny światowej oraz w czasach PRL-u brakowało importowanych produktów z uwagi na zachodnią izolację
+                            polityczną.<br />
+                            Kompot własnej roboty był łatwy w przygotowaniu, a schłodzony do dziś smakuje wyśmienicie.<br />
+                            Z upływem czasu kompot przerodził się w tradycyjny polski napój, który gasi pragnienie i dostarcza cennych witamin.
+                        </p>
+                    </li>
+                    <li class="historia__item">
+                        <h3 class="historia__subtitle">Co zrobiliśmy?</h3>
+                        <h4 class="historia__subheading">Pojechaliśmy do babci gotować kompot.</h4>
+                        <p class="historia__text">
+                            Gotowaliśmy do momentu zadowolenia i pewności, że to jest TO. Uzyskaliśmy smak, który innym w pierwszej myśli
+                            przypomina własną babcię, nie tylko po wypiciu, ale też po zapachu. Dlatego zdecydowaliśmy się, że to babcia będzie
+                            znakiem Komponady, bo to jej dzieło!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- galeria -->
+        <section class="galeria" id="galeria">
+            <div class="galeria__container container">
+                <h2 class="galeria__title section-title">Galeria</h2>
+
+                <ul class="galeria__list">
+                    <li class="galeria__item">
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                                srcset="
+                                        ./assets/img/galeria/desktop/photo_1_1x-desktop.jpg 1x,
+                                        ./assets/img/galeria/desktop/photo_1_2x-desktop.jpg 2x
+                                    "
+                                media="(min-width: 1280px)" />
+                            <!-- Mobile -->
+                            <source
+                                srcset="./assets/img/galeria/mob/photo_1_1x-mob.jpg 1x, ./assets/img/galeria/mob/photo_1_2x-mob.jpg 2x"
+                                media="(max-width: 1279px)" />
+                            <!-- Fallback -->
+                            <img
+                                class="galeria__photo"
+                                src="./assets/img/galeria/mob/photo_1_1x-mob.jpg"
+                                alt="lemoniada Komponada"
+                                width="319"
+                                height="320"
+                                loading="lazy"
+                                decoding="async" />
+                        </picture>
+                    </li>
+
+                    <li class="galeria__item">
+                        <picture>
+                            <source
+                                srcset="
+                                        ./assets/img/galeria/desktop/photo_2_1x-desktop.jpg 1x,
+                                        ./assets/img/galeria/desktop/photo_2_2x-desktop.jpg 2x
+                                    "
+                                media="(min-width: 1280px)" />
+                            <source
+                                srcset="./assets/img/galeria/mob/photo_2_1x-mob.jpg 1x, ./assets/img/galeria/mob/photo_2_2x-mob.jpg 2x"
+                                media="(max-width: 1279px)" />
+                            <img
+                                class="galeria__photo"
+                                src="./assets/img/galeria/mob/photo_2_1x-mob.jpg"
+                                alt="Butelka lemoniady na śniegu"
+                                width="319"
+                                height="320"
+                                loading="lazy"
+                                decoding="async" />
+                        </picture>
+                    </li>
+
+                    <li class="galeria__item">
+                        <picture>
+                            <source
+                                srcset="
+                                        ./assets/img/galeria/desktop/photo_3_1x-desktop.jpg 1x,
+                                        ./assets/img/galeria/desktop/photo_3_2x-desktop.jpg 2x
+                                    "
+                                media="(min-width: 1280px)" />
+                            <source
+                                srcset="./assets/img/galeria/mob/photo_3_1x-mob.jpg 1x, ./assets/img/galeria/mob/photo_3_2x-mob.jpg 2x"
+                                media="(max-width: 1279px)" />
+                            <img
+                                class="galeria__photo"
+                                src="./assets/img/galeria/mob/photo_3_1x-mob.jpg"
+                                alt="Butelka lemoniady na stole"
+                                width="319"
+                                height="320"
+                                loading="lazy"
+                                decoding="async" />
+                        </picture>
+                    </li>
+
+                    <li class="galeria__item">
+                        <picture>
+                            <source
+                                srcset="
+                                        ./assets/img/galeria/desktop/photo_4_1x-desktop.jpg 1x,
+                                        ./assets/img/galeria/desktop/photo_4_2x-desktop.jpg 2x
+                                    "
+                                media="(min-width: 1280px)" />
+                            <source
+                                srcset="./assets/img/galeria/mob/photo_4_1x-mob.jpg 1x, ./assets/img/galeria/mob/photo_4_2x-mob.jpg 2x"
+                                media="(max-width: 1279px)" />
+                            <img
+                                class="galeria__photo"
+                                src="./assets/img/galeria/mob/photo_4_1x-mob.jpg"
+                                alt="Lemoniada na morzu w piasku"
+                                width="319"
+                                height="320"
+                                loading="lazy"
+                                decoding="async" />
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer" id="kontakt">
+        <div class="footer__container container">
+
+            <div class="footer__content">
+                <h2 class="footer__title section-title">kontakt</h2>
+                <p class="footer__text">
+                    Jesteś właścicielem sklepu, baru lub restauracji? Jesteś zainteresowany współpracą? Chcesz mieć Komponadę na swojej imprezie?
+                    Chcesz jej spróbować?
+                </p>
+                <h3 class="footer__subtitle">Skontaktuj się z nami a wszystko ustalimy!</h3>
+                <form class="footer__form feedbackform" action="" method="post">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input class="feedbackform__input" type="email" placeholder="e-mail" name="email" id="email" autocomplete="email" required />
+                    <label for="message" class="visually-hidden">Wiadomość</label>
+                    <textarea class="feedbackform__textarea" placeholder="wiadomość" name="message" id="message" autocomplete="off" required></textarea>
+                    <button class="feedbackform__btn" type="submit">WYŚLIJ</button>
+                </form>
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+                    $email   = htmlspecialchars(trim($_POST["email"]));
+                    $message = htmlspecialchars(trim($_POST["message"]));
+
+                    $to = "mailbox.flo@gmail.com";
+
+                    $subject = "New message from the feedback form";
+
+                    $body = "Sender's email: $email\n";
+                    $body .= "Message: $message\n";
+
+                    $headers  = "From: no-reply@" . $_SERVER["SERVER_NAME"] . "\r\n";
+                    $headers .= "Reply-To: $email\r\n";
+                    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+                    if (mail($to, $subject, $body, $headers)) {
+                        echo "<p style='color:#fff; padding: 16px 0; font-weight: bold; max-width: 560px; font-size: 20px; margin: 0 auto; text-align: center;'>WIADOMOŚĆ ZOSTAŁA WYSŁANA POMYŚLNIE!!</p>";
+                    } else {
+                        echo "<p style='color:red; padding: 16px 0; font-weight: bold; max-width: 560px; font-size: 20px; margin: 0 auto; text-align: center;'>Error sending message.</p>";
+                    }
+                }
+                ?>
+            </div>
+
+            <address class="footer__contacts">
+                <a class="footer__phone" href="tel:48572898899">
+                    <svg class="footer__phoneicon" width="14" height="22">
+                        <use xlink:href="./assets/svg/sprite.svg#phone"></use>
+                    </svg>
+                    (+48) 572 89 88 99
+                </a>
+                <ul class="footer__socials socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.instagram.com/komponada/" target="_blank" rel="noopener noreferrer">
+                            <svg class="socials__icon" width="32" height="32">
+                                <use xlink:href="./assets/svg/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.facebook.com/domowykompot" target="_blank" rel="noopener noreferrer">
+                            <svg class="socials__icon" width="32" height="32">
+                                <use xlink:href="./assets/svg/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </address>
+
+            <p class="footer__copyright">
+                <svg class="footer__copyright-icon" width="12" height="13">
+                    <use xlink:href="./assets/svg/sprite.svg#copy"></use>
+                </svg>
+                komponada
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/app.js" type="module"></script>
+</body>
+
+</html>
