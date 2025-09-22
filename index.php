@@ -255,7 +255,7 @@
                     $email   = htmlspecialchars(trim($_POST["email"]));
                     $message = htmlspecialchars(trim($_POST["message"]));
 
-                    $to = "mailbox.flo@gmail.com";
+                    $to = "biuro@poldrink.pl";
 
                     $subject = "New message from the feedback form";
 
